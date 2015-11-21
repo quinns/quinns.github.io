@@ -1,0 +1,2 @@
+#ModPagespeed off
+php_value newrelic.appname "quinnsupplee.com"

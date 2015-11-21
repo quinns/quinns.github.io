@@ -1,0 +1,33 @@
+*{
+	color: #666;
+	font-family: 'Muli', sans-serif;
+}
+body{
+	padding-top: 0;
+}
+
+#big-wrapper{
+	padding-bottom: 50px;
+}
+
+h1{
+	margin-bottom: 1em;
+}
+.lead{
+	margin-bottom: 2em;
+}
+.glasses{
+	width: 320px;
+	height: 213px;
+}
+
+.nowrap{
+	white-space: nowrap;
+}
+
+.services-links .link{
+	padding-bottom: 1em;
+}
+.news{
+	margin: 1em 0 1em 0;
+}
