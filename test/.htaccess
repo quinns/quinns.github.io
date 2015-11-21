@@ -1,9 +1,0 @@
-<Files "wp-login.php">
-	AuthName "Password required"
-	AuthType Basic
-	AuthUserFile /var/sites/quinnsupplee.com/www/test/.htpasswd
-	require valid-user
-</Files>
-
-
-
