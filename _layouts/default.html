@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+<body>
+    <div class="container" id="big-wrapper">
+        <div class="starter-template">
+
+		    {% include header.html %}
+		
+		    <div class="container" id="big-wrapper">
+		        <div class="starter-template">
+		        {{ content }}
+		      </div>
+		    </div>
+		
+		    {% include footer.html %}
+
+        </div>
+    </div>
+    <script type="text/javascript">
+	var pattern = Trianglify({
+	    width: window.innerWidth, 
+	    height: window.innerHeight
+	});
+	document.body.appendChild(pattern.canvas())
+    </script>
+</body>
+</html>
