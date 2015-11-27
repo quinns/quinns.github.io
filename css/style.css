@@ -2,23 +2,36 @@
 	color: #666;
 	font-family: 'Muli', sans-serif;
 }
+a, a:hover{
+	color: darkred;
+}
+html{
+	font-size: 16px;
+}
 
 body{
 	padding-top: 0;
-}
-.starter-template {
-  padding: 40px 15px;
-  text-align: center;
+	height: 100%;
 }
 
-#big-wrapper{
-	padding-bottom: 50px;
+header{
+	margin-top: 1rem;
 }
-
-h1{
+footer{
 	margin-bottom: 1em;
 }
+h1{
+/* 	margin-bottom: 1em; */
+	font-size: 3rem;
+}
+.page-heading.posts{
+	font-size: 1.5rem;
+}
 
+p{
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
 .lead{
 	margin-bottom: 2em;
 }
@@ -27,9 +40,28 @@ h1{
 	width: 320px;
 	height: 213px;
 }
-
+.site-title{
+	font-size: 1.5rem;
+	background-color: #666;
+	color: #fff;
+	border-radius: 10px;
+	border: none;
+}
+.site-title:hover,
+.site-title:focus{
+	color: #fff;
+	background-color: darkred;
+	border: none;
+}
+body.front .site-title{
+	display: none;
+}
 .nowrap{
 	white-space: nowrap;
+}
+
+.main-content{
+	margin-bottom: 2rem;
 }
 
 .services-links .link{
@@ -38,4 +70,14 @@ h1{
 
 .news{
 	margin: 1em 0 1em 0;
+}
+
+.rss-subscribe a,
+.back-to-posts{
+	font-size: .5rem;
+	margin-top: 1rem;
+}
+
+.post-list .post-link{
+	font-size: 1.25rem;
 }

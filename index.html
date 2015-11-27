@@ -1,31 +1,45 @@
 ---
 layout: default
+body_class: front
 ---
 
-<div class="center-block"><img src="img/glasses.jpg" class="glasses" title="I don't really wear these" alt="logo"></div>
+<div class="center-block">
+	
+	
+<div class="row">	
+<div class="col-md-4">
+	<img src="img/glasses.jpg" class="glasses" title="I don't really wear these" alt="logo">
+</div>
+<div class="col-md-8">
 <h1><span class="nowrap">My name is</span> <span class="nowrap">Quinn Supplee.</span></h1>
+
 <p class="lead">I build web apps in Santa Rosa, CA. I am currently CTO at <a href="//zenergyworks.com" target="_blank" title="The day job. Good people!">Zenergy Works</a>.</p>
+</div>
+</div>
+
+
+
+
+
     <div class="row center-block news">
         <p>Check out my talk, <a href="accidentalsysadmin/">"The Accidental Sysadmin"</a></p>
     </div>
-<div class="row services-links">
-    <div class="row">
-        <div class="link col-md-2 col-md-offset-1">
-            <a href="//facebook.com/qsupplee" target="_blank" title="Pictures of my kids, mostly">Facebook</a>
-        </div>
-        <div class="link col-md-2">
-            <a href="//twitter.com/quinns" target="_blank" title="Just random tech retweets">Twitter</a>
-        </div>
-        <div class="link col-md-2">
-           <a href="//www.linkedin.com/in/quinnsupplee" target="_blank" title="People like to endorse me for web stuff">LinkedIn</a>
-        </div>
-        <div class="link col-md-2">
-            <a href="//twitter.com/quinns" target="_blank"></a><a href="//instagram.com/quinn" target="_blank" title="I hope you like black-and-white photography">Instagram</a>
-        </div>
-        <div class="link col-md-2">
-          <a href="mailto:quinn@quinnsupplee.com" title="The 21st century fax machine">E-mail</a>
-        </div>
-    </div>
+</div>
+
+  <h1 class="page-heading posts">Posts</h1>
+
+  <div class="post-list row">
+    {% for post in site.posts limit:4 %}
+      <div class="col-sm-3">
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <div class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</div>
+      </div>
+    {% endfor %}
+  </div>
+
+<a class="btn btn-default" href="posts">More posts</a>
+
+
 
 
 
