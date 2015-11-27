@@ -24,6 +24,9 @@ h1{
 /* 	margin-bottom: 1em; */
 	font-size: 3rem;
 }
+h1.front-title{
+	margin-top: 0;
+}
 .page-heading.posts{
 	font-size: 1.5rem;
 }
