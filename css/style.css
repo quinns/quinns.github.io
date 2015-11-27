@@ -2,13 +2,12 @@
 	color: #666;
 	font-family: 'Muli', sans-serif;
 }
-a, a:hover{
-	color: darkred;
-}
 html{
 	font-size: 16px;
 }
-
+a, a:hover{
+	color: darkred;
+}
 body{
 	padding-top: 0;
 	height: 100%;
@@ -84,7 +83,6 @@ body.front header .selfie{
 .selfie{
 	max-width: 100%;
 	height: auto;
-/* 	border: 2px solid lightgray; */
 }
 header .selfie{
 	max-width: 120px;
@@ -92,7 +90,7 @@ header .selfie{
 .rss-subscribe a,
 .back-to-posts{
 	font-size: .5rem;
-	margin-top: 1rem;
+	margin: 1rem 0 1rem 0;
 }
 
 .post-list .post-link{
