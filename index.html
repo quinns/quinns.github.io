@@ -4,46 +4,24 @@ body_class: front
 ---
 
 <div class="center-block front-header">
-	
-	
-<div class="row">	
-	<div class="col-sm-3">
-		<img src="img/selfie-8bit.jpg" class="selfie img-circle " title="Yours truly" >
+	<div class="row">	
+		<div class="col-sm-3">
+			<img src="img/selfie-8bit.jpg" class="selfie img-circle " title="Yours truly" >
+		</div>
+		<div class="col-sm-9">
+			<h1 class="front-title"><span class="nowrap">My name is</span> <span class="nowrap">Quinn Supplee.</span></h1>		
+			<p class="lead">I build web apps in Santa Rosa, CA. I am currently CTO at <a class="nowrap" href="//zenergyworks.com" target="_blank" title="The day job. Good people!">Zenergy Works</a>.</p>
+	        <p>Check out my talk, <a href="accidentalsysadmin/">"The Accidental Sysadmin"</a></p>
+		</div>
 	</div>
-	<div class="col-sm-9">
-		<h1 class="front-title"><span class="nowrap">My name is</span> <span class="nowrap">Quinn Supplee.</span></h1>
-		
-		<p class="lead">I build web apps in Santa Rosa, CA. I am currently CTO at <a class="nowrap" href="//zenergyworks.com" target="_blank" title="The day job. Good people!">Zenergy Works</a>.</p>
-        <p>Check out my talk, <a href="accidentalsysadmin/">"The Accidental Sysadmin"</a></p>
-	</div>
-<!--
-    <div class="row center-block news">
-        <p>Check out my talk, <a href="accidentalsysadmin/">"The Accidental Sysadmin"</a></p>
-    </div>
--->
-
 </div>
-
-
-
-
-
-</div>
-
-  <h1 class="page-heading posts">Posts</h1>
-
-  <div class="post-list row">
-    {% for post in site.posts limit:4 %}
-      <div class="col-sm-3">
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          <div class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</div>
-      </div>
-    {% endfor %}
+<h1 class="page-heading posts">Posts</h1>
+<div class="post-list row">
+{% for post in site.posts limit:4 %}
+  <div class="col-sm-3">
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      <div class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</div>
   </div>
-
+{% endfor %}
+</div>
 <a class="btn btn-default" href="posts">More posts</a>
-
-
-
-
-
