@@ -87,6 +87,9 @@ body.front header .selfie{
 header .selfie{
 	max-width: 120px;
 }
+.front-header{
+	margin-top: 1rem;
+}
 .rss-subscribe a,
 .back-to-posts{
 	font-size: .5rem;
