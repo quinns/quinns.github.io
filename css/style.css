@@ -56,6 +56,12 @@ p{
 body.front .site-title{
 	display: none;
 }
+body.front .main-content .btn-default{
+	margin-top: 1rem;
+}
+body.front header .selfie{
+	display: none;
+}
 .nowrap{
 	white-space: nowrap;
 }
@@ -72,6 +78,14 @@ body.front .site-title{
 	margin: 1em 0 1em 0;
 }
 
+.selfie{
+	max-width: 100%;
+	height: auto;
+/* 	border: 2px solid lightgray; */
+}
+header .selfie{
+	max-width: 120px;
+}
 .rss-subscribe a,
 .back-to-posts{
 	font-size: .5rem;
