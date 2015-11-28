@@ -99,3 +99,19 @@ header .selfie{
 .post-list .post-link{
 	font-size: 1.25rem;
 }
+.post-list .posts{
+	margin-bottom: .5rem;
+}
+.filed-under{
+	margin-top: .5rem;
+}
+
+
+/*
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+*/

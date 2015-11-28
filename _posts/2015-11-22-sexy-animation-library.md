@@ -6,4 +6,4 @@ category: animation
 tags: ['oh my gosh', 'hawt']
 ---
 
-Oh my gosh this is a sexy JS animation library http://mojs.io/
+Oh my gosh this is a sexy JS animation library [http://mojs.io/](http://mojs.io/){:target="_blank"}

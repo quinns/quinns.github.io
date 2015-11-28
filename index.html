@@ -17,8 +17,8 @@ body_class: front
 </div>
 <h1 class="page-heading posts">Posts</h1>
 <div class="post-list row">
-{% for post in site.posts limit:4 %}
-  <div class="col-sm-3">
+{% for post in site.posts limit:12 %}
+  <div class="col-md-3 col-sm-6 posts">
       <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       <div class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</div>
   </div>
