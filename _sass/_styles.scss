@@ -1,6 +1,6 @@
 *{
 	color: #666;
-	font-family: 'Muli', sans-serif;
+
 }
 html{
 	font-size: 16px;
@@ -12,28 +12,34 @@ a, a:hover{
 body{
 	padding-top: 0;
 	height: 100%;
+	font-family: 'Muli', sans-serif;
 }
 
 header{
 	margin-top: 1rem;
 }
 footer{
-	margin-bottom: 1em;
+	margin-bottom: 1rem;
+	.btn-group{
+		margin-bottom: 1rem;
+	}
 }
+
 h1{
 	font-size: 3rem;
 }
 h1.front-title{
 	margin-top: 0;
 }
-.page-heading.posts{
-	font-size: 1.5rem;
-}
-
 p{
 	font-size: 1rem;
 	line-height: 1.5rem;
 }
+.page-heading.posts{
+	font-size: 1.5rem;
+}
+
+
 .lead{
 	margin-bottom: 2em;
 }
@@ -61,15 +67,19 @@ p{
 	background-color: darkred;
 	border: none;
 }
-body.front .site-title{
-	display: none;
+
+body.front{
+	.site-title{
+		display: none;
+	}
+	.main-content .btn-default{
+		margin-top: 1rem;
+	}
+	header .selfie{
+		display: none;
+	}
 }
-body.front .main-content .btn-default{
-	margin-top: 1rem;
-}
-body.front header .selfie{
-	display: none;
-}
+
 .nowrap{
 	white-space: nowrap;
 }
@@ -102,11 +112,13 @@ header .selfie{
 	margin: 1rem 0 1rem 0;
 }
 
-.post-list .post-link{
-	font-size: 1.25rem;
-}
-.post-list .posts{
-	margin-bottom: .5rem;
+.post-list{
+	 .post-link{
+		font-size: 1.25rem;
+	}
+	.posts{
+		margin-bottom: .5rem;
+	}
 }
 .filed-under{
 	margin-top: .5rem;

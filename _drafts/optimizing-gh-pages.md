@@ -1,0 +1,1 @@
+http://codeheaven.io/optimizing-assets-in-jekyll-generated-gh-pages/

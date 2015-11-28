@@ -18,9 +18,6 @@ github_username:  quinns
 # Build settings
 markdown: kramdown
 
-
-#permalink: /:year-:month-:day/:title.html
-
-# compress_html:
-# ignore:
-#     envs: [localhost]
+sass:
+    sass_dir: _sass
+    style: compressed
