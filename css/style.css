@@ -8,6 +8,7 @@ html{
 a, a:hover{
 	color: darkred;
 }
+
 body{
 	padding-top: 0;
 	height: 100%;
@@ -20,7 +21,6 @@ footer{
 	margin-bottom: 1em;
 }
 h1{
-/* 	margin-bottom: 1em; */
 	font-size: 3rem;
 }
 h1.front-title{
@@ -38,10 +38,16 @@ p{
 	margin-bottom: 2em;
 }
 
-.glasses{
-	width: 320px;
-	height: 213px;
+
+.btn-primary{
+	background-color: darkred;
+	border: none;
 }
+.btn-primary:hover{
+	background-color: firebrick;
+	border: none;
+}
+
 .site-title{
 	font-size: 1.5rem;
 	background-color: #666;
@@ -105,13 +111,3 @@ header .selfie{
 .filed-under{
 	margin-top: .5rem;
 }
-
-
-/*
-.row-eq-height {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-*/
