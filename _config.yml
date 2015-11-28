@@ -20,3 +20,8 @@ markdown: kramdown
 
 
 #permalink: /:year-:month-:day/:title.html
+
+
+compress_html:
+ignore:
+    envs: [localhost]
