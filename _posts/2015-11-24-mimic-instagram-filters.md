@@ -22,29 +22,19 @@ custom_js:
 		 				{{ item | replace:'_','' }}
 		 			</div>
 		 		</div>
-<!--
-		 		<div id="modal-{{ item | replace:'no filter','' }}" class="hidden">
-		 			<img src="/img/lenna.jpg" class="{{ item | replace:'no filter','' }}">
-		 		</div>
--->
-
-
-<div class="modal fade" id="modal-{{ item | replace:'no filter','' }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">{{ item | replace:'_','' }}</h4>
-      </div>
-      <div class="modal-body">
-
-		 			<div class="lenna {{ item | replace:'no filter','' }}"></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
+				<div class="modal fade" id="modal-{{ item | replace:'no filter','' }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				  <div class="modal-dialog modal-lg" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				        <h4 class="modal-title" id="myModalLabel">{{ item | replace:'_','' }}</h4>
+				      </div>
+				      <div class="modal-body">
+							<div class="lenna {{ item | replace:'no filter','' }}"></div>
+				      </div>
+				    </div>
+				  </div>
+				</div>
 		{% endfor %}	
 	</div>
 </div>
