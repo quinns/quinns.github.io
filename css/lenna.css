@@ -1,0 +1,9 @@
+.lenna .thumbnail{
+	margin-right: 16px;
+}
+.lenna .caption{
+	padding: 5px 0 0 2px;
+}
+.lenna .caption::first-letter{
+	text-transform: uppercase;
+}

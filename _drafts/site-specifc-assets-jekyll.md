@@ -1,1 +1,0 @@
-http://mattgemmell.com/page-specific-assets-with-jekyll/
