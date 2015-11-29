@@ -1,6 +1,9 @@
 ---
 layout: default
 body_class: front
+custom_js:
+- grid.min
+- grid-front
 ---
 <div class="center-block front-header">
 	<div class="row">	
@@ -17,7 +20,7 @@ body_class: front
 <h1 class="page-heading posts">Posts</h1>
 <div class="post-list row">
 {% for post in site.posts limit:12 %}
-  <div class="col-md-3 col-sm-6 posts">
+  <div class="col-md-3 col-sm-4 posts">
       <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       <div class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</div>
   </div>
