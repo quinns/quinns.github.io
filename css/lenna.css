@@ -4,6 +4,15 @@
 .lenna .caption{
 	padding: 5px 0 0 2px;
 }
-.lenna .caption::first-letter{
+.lenna .caption::first-letter,
+.modal-title::first-letter{
 	text-transform: uppercase;
+}
+.modal .lenna{
+	background-image: url(../img/lenna-hi.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 100%;
+	height: 480px;
 }
