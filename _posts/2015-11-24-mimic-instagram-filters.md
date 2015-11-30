@@ -17,7 +17,7 @@ custom_js:
 		{% assign filters = "no filter, aden, reyes, perpetua, inkwell, earlybird, toaster, walden, hudson, gingham, mayfair, lofi, xpro2, _1977, brooklyn, nashville, lark, moon" | split: ", " %}
 		{% for item in filters %}
 		 		<div class="thumbnail col-xs-4 col-sm-3 col-md-2">
-		 			<a data-toggle="modal" data-target="#modal-{{ item | replace:'no filter','' }}"><img src="/img/lenna.jpg" class="{{ item | replace:'no filter','' }}"></a>
+		 			<a data-toggle="modal" class="modal-anchor" data-target="#modal-{{ item | replace:'no filter','' }}"><img src="/img/lenna.jpg" class="{{ item | replace:'no filter','' }}"></a>
 		 			<div class="caption small">
 		 				{{ item | replace:'_','' }}
 		 			</div>

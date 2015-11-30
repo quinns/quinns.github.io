@@ -129,6 +129,10 @@ header .selfie{
 .front-header{
 	margin-top: 1rem;
 }
+
+.modal-anchor{
+	cursor: pointer;
+}
 .rss-subscribe a,
 .back-to-posts{
 	font-size: .5rem;
@@ -141,6 +145,12 @@ header .selfie{
 	}
 	.posts{
 		margin-bottom: .5rem;
+	}
+	a{
+		font-weight: normal;
+	}
+	li{
+		margin-bottom: 1rem;
 	}
 }
 .filed-under{

@@ -22,3 +22,8 @@ markdown: kramdown
 sass:
     sass_dir: _sass
     style: compressed
+
+
+paginate: 10
+paginate_path: "/posts/page:num/"
+gems: [jekyll-paginate]
