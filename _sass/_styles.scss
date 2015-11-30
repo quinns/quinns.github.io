@@ -1,18 +1,26 @@
-*{
-	color: #666;
+$linkcolor:  darken(#40B39D, 15%);
+$activelinkcolor: #314D5D;
+$heading_1: #E05A44;
+$heading_2: #E57B37;
 
-}
 html{
 	font-size: 16px;
 }
-a, a:hover{
-	color: darkred;
+a{
+	color: $linkcolor;
+
+}
+a:hover,
+a:focus{
+	color: $activelinkcolor;
 }
 
 body{
+	background-color: lighten(#F1CB3F, 37%);
 	padding-top: 0;
 	height: 100%;
 	font-family: 'Muli', sans-serif;
+	color: #666;
 }
 
 header{
@@ -27,9 +35,13 @@ footer{
 
 h1{
 	font-size: 3rem;
+	color: $heading_1;
 }
 h1.front-title{
 	margin-top: 0;
+}
+h2{
+	color: $heading_2;
 }
 p{
 	font-size: 1rem;
@@ -43,10 +55,13 @@ p{
 .lead{
 	margin-bottom: 2em;
 }
+.post-meta{
+	color: $heading_2;
+}
 
 
 .btn-primary{
-	background-color: darkred;
+	background-color: $linkcolor;
 	border: none;
 }
 .btn-primary:hover{
@@ -64,7 +79,7 @@ p{
 .site-title:hover,
 .site-title:focus{
 	color: #fff;
-	background-color: darkred;
+	background-color: $linkcolor;
 	border: none;
 }
 
@@ -79,6 +94,14 @@ body.front{
 		display: none;
 	}
 }
+
+.main-content a{
+	font-weight: bold;
+}
+body.front .main-content a{
+	font-weight: normal;
+}
+
 
 .nowrap{
 	white-space: nowrap;

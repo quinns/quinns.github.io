@@ -8,4 +8,4 @@ tags: ['oh my gosh']
 
 Oh my gosh this is a [sexy JS animation library](http://mojs.io/){:target="_blank"}.
 
-![Sample animation](/img/mojs.gif)
+<a href="http://mojs.io" target="_blank"><img src="/img/mojs.gif" class="img-responsive" title="Animation sample"></a>
