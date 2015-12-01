@@ -1,0 +1,14 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body class="{{ page.body_class }}">
+		    {% include header.html %}
+		    <div class="container main-content">
+		        {{ content }}
+		    </div>
+		    {% include trianglify.html %}
+</body>
+</html>
