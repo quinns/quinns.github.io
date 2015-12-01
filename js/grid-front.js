@@ -1,3 +1,3 @@
-jQuery(document).ready(function(){
+jQuery(function($) {
 	$('body.front .post-list .posts').responsiveEqualHeightGrid();	
 });
