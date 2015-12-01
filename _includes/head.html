@@ -6,37 +6,28 @@
 	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css">
-<!-- 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Muli" type="text/css"> -->
 	<link href='//fonts.googleapis.com/css?family=Noto+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}" type="text/css">
-
-
 	{% if page.custom_css %}
 	  {% for stylesheet in page.custom_css %}
 	  <link rel="stylesheet" href="/css/{{ stylesheet }}.css" media="screen" type="text/css">
 	  {% endfor %}
 	{% endif %}
-
-	
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/trianglify/0.2.0/trianglify.min.js" type="text/javascript"></script>
-
 	{% if page.custom_js %}
 	  {% for js_file in page.custom_js %}
 	  <script src='/js/{{ js_file }}.js' type="text/javascript"></script>
 	  {% endfor %}
 	{% endif %}
-
 	<script>
 	{% include google_analytics.js %}
 	</script>
-
-<meta property="og:image" content="{{ site.baseurl }}/img/glasses-og.jpg" />
+	<meta property="og:image" content="{{ site.baseurl }}/img/glasses-og.jpg" />
 </head>
