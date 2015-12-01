@@ -9,6 +9,8 @@ layout: default
   </header>
 
   <div class="post-content" itemprop="articleBody">
+	{% if page.legacy %}<div class="alert alert-danger" role="alert"><span class="fa fa-exclamation-triangle" aria-hidden="true"></span> Caution: This content is several years old and has been imported from a previous version of this site. It is presented here primarily for historical purposes. This information may be out of date, and there may be some layout issues with this page.</div>
+	{% endif %}
     {{ content }}
   </div>
 

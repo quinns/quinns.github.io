@@ -4,9 +4,8 @@ layout: post
 date: 2010-06-24
 category: drupal
 tags: link-checking
+legacy: true
 ---
-
-<div class="alert alert-danger" role="alert">Note: This content is several years old and has been imported from a previous version of this site. The information presented here may be out of date, and there may be some layout issues with this page.</div>
 
 Here are a couple of really useful modules I've been using to help ensure my Drupal sites don't have broken links, and that embedded URL aliases are kept current automatically:
 

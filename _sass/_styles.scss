@@ -19,7 +19,10 @@ body{
 	background-color: lighten(#F1CB3F, 37%);
 	padding-top: 0;
 	height: 100%;
-	font-family: 'Muli', sans-serif;
+// 	font-family: 'Muli', sans-serif;
+
+	font-family: 'Noto Sans', sans-serif;
+
 	color: #666;
 }
 
@@ -33,6 +36,9 @@ footer{
 	}
 }
 
+h1, h2, h3, h4, h5, h6{
+// 	font-weight: 700;
+}
 h1{
 	font-size: 3rem;
 	color: $heading_1;
@@ -57,6 +63,7 @@ p{
 }
 .post-meta{
 	color: $heading_2;
+	font-variant: small-caps;
 }
 
 
@@ -95,7 +102,7 @@ body.front{
 	}
 }
 
-.main-content a{
+.post-content a{
 	font-weight: bold;
 }
 body.front .main-content a{
@@ -155,4 +162,8 @@ header .selfie{
 }
 .filed-under{
 	margin-top: .5rem;
+}
+
+body.front .post-list{
+	display: none;
 }
