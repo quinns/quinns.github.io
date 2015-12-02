@@ -9,12 +9,12 @@ tags: Bootstrap
 
 {% highlight html %}
 <div class="embed-responsive embed-responsive-16by9">
-    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/TcWPiHjIExA"></iframe>
+    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/TcWPiHjIExA" allowfullscreen></iframe>
 </div>
 {% endhighlight %}
 
 ### Demo
 
 <div class="embed-responsive embed-responsive-16by9">
-    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/TcWPiHjIExA"></iframe>
+    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/TcWPiHjIExA" allowfullscreen></iframe>
 </div>
