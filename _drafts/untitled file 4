@@ -1,0 +1,12 @@
+Adding a security review to your Drupal site
+
+Submitted by Quinn on Mon, 02/08/2010 - 12:15
+Any web site owner should be concerned with security. One of the great things about using Drupal is that the developer community takes security seriously. There is actually an entire team of security experts devoted to making sure that any potential vulnerabilities are identified and fixed.
+
+So even though Drupal has good security standards, it's still quite possible to deploy a horribly non-secure site. I think that site owners who are new to Drupal are probably more likely to make some basic mistakes but anyone can leave vulnerabilities open by accident. It's important to promptly apply and core or contrib updates to your code base, of course, but there's more to it than that. It's easy enough, for example, to mistakenly allow all users access to the "Full HTML" input filter. What's wrong with allowing all your users to submit Full HTML posts or comments? Well, Full HTML allows such potentially harmful tags such as SCRIPT to be posted.
+
+Fortunately there's a nice little module that will scan your installation and give you a checklist of common potential security problems. This module is called "Security Review" and I highly recommend all Drupal sites make use of it.
+
+Drupal 6.x
+Modules
+Security

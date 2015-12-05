@@ -1,0 +1,105 @@
+Integrating Gallery2 with Drupal
+
+Submitted by Quinn on Mon, 02/08/2010 - 13:35
+I have successfully implemented Gallery2 multi-site with a Drupal multi-site setup. It took a bit of work so I'm sharing the overall process here.
+
+A good place to start is "Drupal integration documentation": http://codex.gallery2.org/Integration:Drupal
+
+Install Gallery2.
+
+Upload and unpack the gallery software to your server.
+
+Install the Gallery module in Drupal. http://drupal.org/project/gallery
+
+(Obviously, change "DOMAIN.com" below to your specific domain as per your Drupal instance.)
+
+Start by browsing to gallery installer page
+
+Click "Begin installation"
+Copy authentication key to clipboard
+If login.txt already exists, delete the authentication key already present.
+Paste authentication key into the new file you created. Save and exit.
+Go back to browser. Continue through to Step 3.
+Choose "Multisite installation"
+You need to choose a system path and a URL for the new gallery install. The gallery instance will be installed in a folder galled gallery2. We place this directory above the drupal directory. We will make a symlink from our Drupal directory a bit later.
+
+The URL should be the complete path to the "stand-alone" version of the gallery (The gallery will be accessible as a stand-alone script and also as an embedded Drupal module. More on that later.)
+
+Public URL is the URL for the "stand-alone" version of our gallery. So, example:
+
+http://DOMAIN.com/sites/DOMAIN.com/gallery2/main.php
+
+(Remember, this site is in our Drupal multi-site setup so we have the "sites" path in our URL.)
+
+Create the symlink from our gallery2 installation in our Drupal root.
+Add system path and public URL values to the installer form at step 3. Continue.
+Step 4, we create the storage directory for gallery. This needs to be a non-web-accessbile directory. We put this above the site's Drupal directory, and parallel with their "gallery2" directory.
+Continue to step 5.
+Step 5, we set up the database.
+The site should already have a database because Drupal has already been installed. We will add the gallery2 tables to our database. You will need the site's DB username, password and database name.
+
+It's important to have the table prefixes to avoid intermixing the gallery2 database tables with Drupal's database tables.
+
+Continue to step 6.
+Step 6, we set up the gallery2 administrator. We can re-use the Drupal root user (user id 1) values. The admin email address should be the same as the "Site Email" address that Drupal uses.
+Click "Create" then "Continue".
+Continue to step 8.
+Continue to step 9.
+Step 9, we set up our gallery2 plug-ins.
+UN-CHECK the following: URL Rewrite
+
+Gallery2's URL re-write conflicts with the way the multi-site Drupal codebase is configured. We may work on a fix for this in the future.
+
+Click "Activate Selected Modules".
+Continue to step 10.
+Continue to step 11.
+Gallery has now been installed as a stand-alone. Click "Go to my gallery!" to see it.
+
+Set up a directory we can FTP files to (image import)
+Enable Drupal integration modules
+
+Visit http://DOMAIN.com/admin/build/modules
+
+Enable all "Gallery2" modules
+Visit http://DOMAIN.com/admin/settings/gallery
+
+Input path and file system settings:
+Gallery2 URI: /sites/DOMAIN.com/gallery2/
+Gallery Base: gallery
+
+Skip installation of Clean URLs.
+Sync users/groups.
+Set up Drupal permissions.
+
+Visit http://DOMAIN.com/admin/user/permissions
+
+Set as appropriate. Most likely you want everyone to be able to access the gallery but only administrators to be able to administrate the settings.
+
+Set up blocks
+
+You will probably want to disable and right-hand blocks on your public theme as the gallery normally needs a large amount of horizontal space.
+
+Visit http://DOMAIN.com/admin/build/block
+
+"Configure" each right-hand block. Set "Show on every page except the listed pages" and enter "gallery" in the text field. Thats "star gallery star".
+Enable "Gallery Navigation" block in your left sidebar region (typically). You probably want to show this block only on gallery pages (path "gallery", exclude quotes)
+
+Site-specific gallery configuration
+
+Visit http://DOMAIN.com/gallery
+
+Change the "This is the main page of your Gallery" string: Browse to top-level gallery (main gallery container) and click Edit Gallery. Change the "Description" to something meaningful (ie, "Welcome to the DOMAIN.com image gallery").
+
+More stuff you might want to do.
+
+Assign "frames" for your images
+
+Create/modify some user groups for administration (so you don't have to administer as the Gallery Admin root user)
+
+Create some galleries
+
+Import some images into your new galleries via FTP, upload a ZIP file containing images, or grab images from a remote URL.
+
+Add menu item into your navigation to http://DOMAIN.com/gallery
+
+Note: This blog post originally appeared as a Drupal.org forum comment in slightly modified form.

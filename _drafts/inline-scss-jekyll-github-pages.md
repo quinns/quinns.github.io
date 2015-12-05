@@ -1,1 +1,0 @@
-http://www.kevinsweet.com/inline-scss-jekyll-github-pages/
