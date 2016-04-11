@@ -4,11 +4,12 @@ layout: default
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+    <h1 class="post-title" itemprop="name headline"><!-- <div class="btn btn-primary">{{ page.category }}</div> -->{{ page.title }}</h1>
     <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
+
 	{% if page.legacy %}<div class="alert alert-danger" role="alert"><span class="fa fa-exclamation-triangle" aria-hidden="true"></span> Caution: This content is several years old and has been imported from a previous version of this site. It is presented here primarily for historical purposes. This information may be out of date, and there may be some layout issues with this page.</div>
 	{% endif %}
     {{ content }}

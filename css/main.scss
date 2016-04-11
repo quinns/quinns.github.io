@@ -3,6 +3,7 @@
 # only Main files contain this front matter, not partials.
 ---
 
+@import "mixins";
 @import "syntax_highlighting";
 @import "styles";
 @import "media_queries";

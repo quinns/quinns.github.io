@@ -164,3 +164,21 @@ header .selfie{
 	margin-top: .5rem;
 }
 
+.threedeetext{
+	@include threedeetext($heading_1);
+	font-size: 3rem;
+	font-family: "Patua One";
+}
+/*
+.threedeetext:active, .threedeetext:hover{
+		text-decoration: none;
+	}
+*/
+body.front .threedeetext{
+	font-size: 6rem;
+}
+
+a.home:hover,
+a.home:focus{
+	text-decoration: none;
+}
