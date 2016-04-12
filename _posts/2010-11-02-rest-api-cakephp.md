@@ -7,7 +7,7 @@ category: cakephp
 tags: rest-api cakephp xml
 ---
 
-*Update: I've got a semi-functional demo of this concept available for [download](https://github.com/quinns/REST-API){:target="_blank"}.*
+*Update: I've got a semi-functional demo of this concept available for [download](https://github.com/quinns/REST-API).*
 
 It's pretty easy to build an XML-based REST API with CakePHP. You just write your application as normal but make a few changes here and there to output the XML data.
 
@@ -16,7 +16,7 @@ A few things to keep in mind:
 Any controller that outputs XML will need to use the RequestHandler component. I find it's easiest to put the component in your app_controller.php so it automatically loaded by all your controllers.
 You can use the XML Component's serialize object to automatically output all your XML data without having to manually define your template item-by-item.
 
-Read the CakePHP [documentation](https://web.archive.org/web/20111210070413/http://book.cakephp.org/view/569/serialize){:target="_blank"} on XML serialization to learn more about this topic.
+Read the CakePHP [documentation](https://web.archive.org/web/20111210070413/http://book.cakephp.org/view/569/serialize) on XML serialization to learn more about this topic.
 
 ## Example app_controller.php
 

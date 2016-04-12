@@ -6,6 +6,6 @@ category: animation
 tags: ['oh my gosh']
 ---
 
-Oh my gosh this is a [sexy JS animation library](http://mojs.io/){:target="_blank"}.
+Oh my gosh this is a [sexy JS animation library](http://mojs.io/).
 
 <a href="http://mojs.io" target="_blank"><img src="/img/mojs.gif" class="img-responsive" title="Animation sample"></a>
