@@ -33,9 +33,11 @@ footer{
 	margin-bottom: 1rem;
 	.btn-group{
 		margin-bottom: 1rem;
+		.social-label{
+			font-family: 'Noto Sans', sans-serif;
+		}
 	}
 }
-
 h1, h2, h3, h4, h5, h6{
 // 	font-weight: 700;
 }
