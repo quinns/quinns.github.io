@@ -131,7 +131,12 @@ body.front .main-content a{
 .selfie{
 	max-width: 100%;
 	height: auto;
+	display: none;
 }
+body.front .selfie{
+	display: block;
+}
+
 header .selfie{
 	max-width: 120px;
 }
@@ -168,19 +173,30 @@ header .selfie{
 
 .threedeetext{
 	@include threedeetext($heading_1);
-	font-size: 3rem;
+// white-space: nowrap;
 	font-family: "Patua One";
+	margin: 0;
+
 }
 /*
 .threedeetext:active, .threedeetext:hover{
 		text-decoration: none;
 	}
 */
-body.front .threedeetext{
-	font-size: 6rem;
+body h1.threedeetext{
+	font-size: rem;
+}
+body.front h1.threedeetext{
+// 	font-size: 6rem;
+	font-size: 12vw;
+
 }
 
 a.home:hover,
 a.home:focus{
 	text-decoration: none;
+}
+
+.selfie.not-front{
+	margin-right: 1rem;
 }
