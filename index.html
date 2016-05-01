@@ -20,14 +20,19 @@ custom_js:
 	</div>
 </div>
 <h3 class="page-heading posts">Latest posts</h3>
-<div class="post-list row">
-{% for post in site.posts limit:12 %}
-  <div class="col-md-3 col-sm-4 posts">
-      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      <div class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</div>
-  </div>
-{% endfor %}
-</div>
-<p><a class="btn btn-primary" href="posts">More posts</a></p>
+
+
+  <ul class="post-list front-page">
+  	{% for post in site.posts limit:10 %}
+      <li>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <div class="small">{{ post.excerpt | strip_html }}</div>
+      </li>
+    {% endfor %}
+  </ul>
+  
+  
+<p><a class="btn btn-primary" href="posts/page2">More posts</a></p>
 
 <p class="small">Things I <span class="fa fa-heart"></span> in no particular order: <a href="https://drupal.org">Drupal</a>, <a href="https://www.w3.org/Style/CSS/">CSS</a>, <a href="https://jquery.com/">jQuery</a>, <a href="http://getbootstrap.com">Bootstrap</a>, <a href="http://php.net">PHP</a>, <a href="http://mysql.com">MySQL</a>, <a href="https://www.pinterest.com/explore/minimal-graphic-design/">minimalist design</a>, <a href="http://littlebigdetails.com/">sensible UI/UX</a>, <a href="http://apache.org">Apache</a>, <a href="https://www.w3.org/standards/webdesign/accessibility">accessibility</a>, <a href="https://developers.google.com/speed/pagespeed/">web site page speed</a>, <a href="https://twitter.com/SwiftOnSecurity">security</a>, <a href="https://en.wikipedia.org/wiki/Representational_state_transfer">REST APIs</a>, <a href="https://gis.stackexchange.com/">cartography</a>, <a href="https://vimeo.com/35688592">typography</a>. This site was built by hand using <a href="https://daringfireball.net/projects/markdown/">Markdown</a>, <a href="http://jekyllrb.com">Jekyll</a>, and <a href="http://pages.github.com">GitHub Pages</a>.</p>
