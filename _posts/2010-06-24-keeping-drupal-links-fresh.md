@@ -7,7 +7,7 @@ tags: link-checking
 legacy: true
 ---
 
-Here are a couple of really useful modules I've been using to help ensure my Drupal sites don't have broken links, and that embedded URL aliases are kept current automatically:
+Here are a couple of really useful modules I've been using to help ensure my Drupal sites don't have broken links, and that embedded URL aliases are kept current automatically: <!--more--> 
 
 1. [Pathologic](http://drupal.org/project/pathologic)
 2. [Link Checker](http://drupal.org/project/linkchecker)

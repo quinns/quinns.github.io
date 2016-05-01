@@ -27,7 +27,7 @@ custom_js:
       <li>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-            <div class="small">{{ post.excerpt | strip_html }}</div>
+            <div class="snippet">{{ post.excerpt | strip_html }}</div>
       </li>
     {% endfor %}
   </ul>

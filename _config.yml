@@ -24,6 +24,9 @@ sass:
     style: compressed
 
 
-paginate: 5
+paginate: 10
 paginate_path: "/posts/page:num/"
 gems: [jekyll-paginate]
+
+
+excerpt_separator: <!--more-->

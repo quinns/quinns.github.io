@@ -10,7 +10,7 @@ custom_js:
 - bootstrap.min
 ---
 
-[A tiny library](http://una.im/CSSgram/) for recreating Instagram filters with CSS filters and blend modes.
+[A tiny library](http://una.im/CSSgram/) for recreating Instagram filters with CSS filters and blend modes. <!--more--> 
 
 <div class="lenna container">
 	<div class="row ">

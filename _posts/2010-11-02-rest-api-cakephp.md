@@ -9,7 +9,7 @@ tags: rest-api cakephp xml
 
 *Update: I've got a semi-functional demo of this concept available for [download](https://github.com/quinns/REST-API).*
 
-It's pretty easy to build an XML-based REST API with CakePHP. You just write your application as normal but make a few changes here and there to output the XML data.
+It's pretty easy to build an XML-based REST API with CakePHP. You just write your application as normal but make a few changes here and there to output the XML data. <!--more--> 
 
 A few things to keep in mind:
 
