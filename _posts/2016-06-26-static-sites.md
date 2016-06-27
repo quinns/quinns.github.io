@@ -2,9 +2,12 @@
 layout: page
 title: Getting started with Jekyll and GitHub Pages
 date: 2016-06-26
+redirect_from: "/static-sites"
 ---
 
 >TL;DR: Static sites are simpler, more secure, and way faster than dynamic sites and you should totally use them!
+
+<a href="/slide-decks/static-sites" class="btn btn-primary"><span class="fa fa-arrow-circle-right"></span> View the slide deck</a>
 
 ## What is a static site generator?
 
