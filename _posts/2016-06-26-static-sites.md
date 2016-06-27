@@ -1,17 +1,17 @@
 ---
-layout: page
+layout: post
 title: Getting started with Jekyll and GitHub Pages
 date: 2016-06-26
-redirect_from: "/static-sites"
+permalink: /static-sites
 ---
 
->TL;DR: Static sites are simpler, more secure, and way faster than dynamic sites and you should totally use them!
+>TL;DR: Static sites are simpler, more secure, and way faster than dynamic sites and you should totally use them! <!--more--> 
 
 <a href="/slide-decks/static-sites" class="btn btn-primary"><span class="fa fa-arrow-circle-right"></span> View the slide deck</a>
 
 ## What is a static site generator?
 
-In the old days, we wrote web sites entirely by hand, using simple tools like NotePad, and life was good. <!--more--> Simple sites that consisted of just a small number of interlinked pages were easy to create and maintain. However, over time people wanted to be able to manage larger and more complex sites. We started creating large collections of HTML pages, each one which had to be carefully hand-edited. Layout markup and content got intermingled and things became difficult to manage. Somewhat later, templates were introduced using "server side includes", which allowed at least a bit of separation between presentation and content. But includes were difficult to manage and not every server would support them.
+In the old days, we wrote web sites entirely by hand, using simple tools like NotePad, and life was good. Simple sites that consisted of just a small number of interlinked pages were easy to create and maintain. However, over time people wanted to be able to manage larger and more complex sites. We started creating large collections of HTML pages, each one which had to be carefully hand-edited. Layout markup and content got intermingled and things became difficult to manage. Somewhat later, templates were introduced using "server side includes", which allowed at least a bit of separation between presentation and content. But includes were difficult to manage and not every server would support them.
 
 Eventually, someone had the idea of connecting a database to the back-end of a website to store content, and to generate web pages dynamically on the fly, using a server-side programming language such as PHP or Perl. This led to the development of a wide variety of "Content Management Systems", as well as products such as shopping carts, forums, social networks, and many more. It was genius, actually: Databases had been developed over prior decades and had a lot of industrial-strength features and could hold and organize extremely vast amounts of data. When database-backed websites came on the scene, pretty much every web developer jumped on board because the advantages were obvious and quite real.
 
