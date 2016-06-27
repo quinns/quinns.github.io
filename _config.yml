@@ -30,3 +30,6 @@ gems: [jekyll-paginate]
 
 
 excerpt_separator: <!--more-->
+
+gems:
+  - jekyll-redirect-from

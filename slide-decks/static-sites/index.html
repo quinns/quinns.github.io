@@ -1,0 +1,207 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Static site generation using Jekyll and GitHub Pages</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/night.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section data-markdown data-background-image="img/sky1.jpg">
+					# Static site generation
+					## Meet Jekyll and GitHub Pages
+				</section>
+				
+				<section data-markdown data-background-image="img/sky2.jpg">
+					# Everything used to be static
+				</section>
+
+				<section data-markdown data-background-image="img/sky3.jpg">
+					* We would write HTML using simple tools like Notepad
+					* We'd upload files via FTP
+					* We probably were using `&lt;FONT&gt;` tags and `&lt;TABLE&gt;` layouts like crazy 
+					* That was pretty much it! 😅
+				</section>
+				
+				<section data-markdown data-background-image="img/sky4.jpg">
+					# Why things didn't stay static
+				</section>
+
+
+				<section data-markdown data-background-image="img/sky5.jpg">
+					## Hand-crafted, static sites were hard to scale
+					* Larger, more complex projects became very hard to manage
+					* Interactive sites, social/sharing, and e-commerce wasn't feasible
+				</section>
+				
+				<section data-markdown data-background-image="img/sky6.jpg">
+					# The solution seemed to be dynamic sites
+				</section>
+				<section data-markdown data-background-image="img/sky7.jpg">
+					## Databases and server-side processing enabled:
+					* user-generated content
+					* social networking
+					* e-commerce
+					* and so much of what we think about when we think about the modern internet
+				</section>
+				<section data-markdown data-background-image="img/sky8.jpg">
+					# The problems with the dynamic approach
+				</section>
+				<section data-markdown data-background-image="img/sky9.jpg">
+					# Dynamic sites ...	
+					* are complex and can be hard to develop
+					* can be slow
+					* tend to have bugs
+					* can be hacked
+					* can be expensive to host and maintain
+				</section>				
+				<section data-markdown data-background-image="img/sky11.jpg">
+					## Let's end the tyranny of Content Management Systems
+				</section>		
+				<section data-markdown data-background-image="img/sky13.jpg">
+					# Jekyll 
+					## [www.jekyllrb.com](http://jekyllrb.com)
+				</section>
+				<section  data-markdown  data-background-image="img/sky14.jpg">
+				###Jekyll is a simple, blog-aware, static site generator
+				It takes a template directory containing raw text files in various formats, runs it through a converter and a renderer, and spits out a complete, ready-to-publish static website suitable for serving with your favorite web server. 
+				
+				Jekyll also happens to be the engine behind **GitHub Pages**, which means you can use Jekyll to host your project’s page, blog, or website from GitHub’s servers *for free*.
+				</section>
+				<section  data-markdown  data-background-image="img/sky25.jpg">
+					# Features
+					* Intuitive directory structure
+					* Drafts
+					* Built-in Sass support
+					* Built-in web server
+					* Pagination and blogroll
+					* Variables and metadata
+					* Flexible categorization and tagging
+				</section>
+				<section  data-markdown  data-background-image="img/sky15.jpg">
+					# Advantages
+					## Speed, simplicity and security
+					* No database or server-side processing! 
+					* Simple syntax for templates
+					* Easily create content using Markdown, Textile, or HTML
+					* Highly customizable
+					* Secure (basically unhackable!)
+					* Boilerplate layout automatically generated
+					* Blazingly fast 🚀
+				</section>
+				<section  data-markdown  data-background-image="img/sky16.jpg">
+					# Disadvantages
+					* No database or server-side processing! 
+					* No built-in search engine
+					* No dynamic content
+					* No user-generated content or user accounts
+					* No E-commerce
+					* No WYSWIYG
+					
+					(There are workarounds for most all this stuff though)
+				</section>				
+				<section  data-markdown  data-background-image="img/sky17.jpg">
+					## What about WYSIWYG and media management?
+					
+					Jekyll, being just a collection of text files that are compiled into a website, doesn't have a rich-text editor. 
+					
+					However, there are some free or paid add-ons that can help:
+					* Prose.io
+					* Hyde
+					* Cloud Cannon
+					* [Many more](https://github.com/planetjekyll/awesome-jekyll-editors)
+				</section>				
+
+
+				<section  data-markdown  data-background-image="img/sky18.jpg">
+					# How do I publish my site?
+				</section>		
+
+				<section  data-markdown  data-background-image="img/sky19.jpg">
+					# It's really easy
+					## Publish via plain old FTP or SFTP to any server anywhere
+				</section>		
+				<section  data-markdown  data-background-image="img/sky21.jpg">
+					# It's even easier!
+					## Publish your site to GitHub Pages for free
+				</section>		
+				<section data-markdown  data-background-image="img/sky22.jpg">
+					## The entire process for publishing to GitHub pages
+					 
+					1. Commit your latest changes to your repository’s publishing branch
+					2. Jekyll publishes your site to GitHub pages
+					3. There is no step 3
+				</section>	
+				<section  data-markdown  data-background-image="img/sky23.jpg">
+					# GH Pages tips
+					* Every GitHub account gets 1 "Organization" sites and *unlimited* "Project" sites
+					* The publishing method for each is slightly different
+					* There are some limits on the amount of data you can store in a GitHub project (1GB total, 100MB max size per file)
+					* You can easily map your custom domain so the your site is totally custom and doesn't refer to GitHub anywhere
+					* Free hosting requires a "public" repository. If you want to use a private repository, you need a paid account (starts at $7/month)
+				</section>		
+				
+				
+				<section  data-markdown  data-background-image="img/sky26.jpg">
+					# That's all, folks
+					#### Read my blog post and download this slide deck at [https://www.quinnsupplee.com/static-sites](https://www.quinnsupplee.com/static-sites)
+					
+					Special thanks to these open-source resources
+					* Slide deck created with [Reveal.js](https://github.com/hakimel/reveal.js)
+					* All background images from [Flickr's Creative Commons](https://www.flickr.com/creativecommons/) pool
+				</section>
+				
+				
+				
+				<section  data-markdown  data-background-image="img/sky31.jpg">
+					## What next?
+					Here are some useful documentation links, tutorials and resources:
+					<small>
+					* https://jekyllrb.com/docs/quickstart/
+					* http://www.staticgen.com/
+					* http://jekyllthemes.org/
+					* https://scotch.io/tutorials/getting-started-with-jekyll-plus-a-free-bootstrap-3-starter-theme
+					* https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/
+					* https://css-tricks.com/building-a-jekyll-site-part-1-of-3/	
+					* http://www.markwk.com/2013/04/prose.io-content-editor-for-jekyll-sites.html
+					* https://developmentseed.org/blog/2012/07/27/build-cms-free-websites/
+					</small>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
