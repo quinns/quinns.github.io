@@ -27,7 +27,7 @@ If you've ever built and maintained a WordPress, Drupal, or Joomla site you prob
 
 **There is a simpler way**
 
-Imagine if there was a way to get a lot of the benefits of a complex CMS without any of the security problems, need for constant upgrades, complexity, and server requirments. A way that still let a designer/developer create a custom designed site, using all the modern front-end frameworks and tools, and could quickly populate that site with content in a fairly easy to use system.
+Imagine if there was a way to get a lot of the benefits of a complex CMS without any of the security problems, need for constant upgrades, complexity, and server requirements. A way that still let a designer/developer create a custom designed site, using all the modern front-end frameworks and tools, and could quickly populate that site with content in a fairly easy to use system.
 
 Imagine that this system included some smarts, so you could include sophisticated logic into your templates to perform calculations, interpret variables, output loops, and render different types of structured data in a wide variety of ways.
 
