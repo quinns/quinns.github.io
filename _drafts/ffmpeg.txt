@@ -1,0 +1,61 @@
+there are several ways
+
+[2:03] 
+you got homebrew? `brew install ffmpeg` should do it if so
+
+[2:03] 
+http://brew.sh/
+
+Liz Nix [2:03 PM] 
+oh yay
+
+[2:04] 
+i guess i do have homebrew
+
+Quinn Supplee [2:04 PM] 
+:beers:
+
+[2:05] 
+you can also get a precompiled binary from http://www.ffmpegmac.net/
+FFmpeg Binary | FFmpeg Binary for Mac
+On this page I offer already compiled binaries of the FFmpeg Source code
+
+Liz Nix [2:05 PM] 
+i got that
+
+[2:05] 
+but i don’t know how to use it
+
+Quinn Supplee [2:07 PM] 
+you might need to update brew
+
+[2:07] 
+you might need to be root
+
+[2:07] 
+so, `sudo brew update` and `sudo brew install ffmpeg`
+
+[2:08] 
+i also had to `sudo brew link yasm` between those 2 steps
+
+[2:09] 
+yep that works i now have
+
+[2:09] 
+ ```Quinns-iMac:~ quinn$ ffmpeg
+ffmpeg version 3.0 Copyright (c) 2000-2016 the FFmpeg developers
+  built with Apple LLVM version 7.0.2 (clang-700.1.81)
+  configuration: --prefix=/usr/local/Cellar/ffmpeg/3.0 --enable-shared --enable-pthreads --enable-gpl --enable-version3 --enable-hardcoded-tables --enable-avresample --cc=clang --host-cflags= --host-ldflags= --enable-opencl --enable-libx264 --enable-libmp3lame --enable-libxvid --enable-vda
+  libavutil      55. 17.103 / 55. 17.103
+  libavcodec     57. 24.102 / 57. 24.102
+  libavformat    57. 25.100 / 57. 25.100
+  libavdevice    57.  0.101 / 57.  0.101
+  libavfilter     6. 31.100 /  6. 31.100
+  libavresample   3.  0.  0 /  3.  0.  0
+  libswscale      4.  0.100 /  4.  0.100
+  libswresample   2.  0.101 /  2.  0.101
+  libpostproc    54.  0.100 / 54.  0.100
+Hyper fast Audio and Video encoder
+usage: ffmpeg [options] [[infile options] -i infile]... {[outfile options] outfile}...
+
+Use -h to get full help or, even better, run 'man ffmpeg'
