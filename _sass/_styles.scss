@@ -19,10 +19,7 @@ body{
 	background-color: lighten(#F1CB3F, 37%);
 	padding-top: 0;
 	height: 100%;
-// 	font-family: 'Muli', sans-serif;
-
 	font-family: 'Noto Sans', sans-serif;
-
 	color: #666;
 }
 
@@ -204,4 +201,10 @@ a.home:focus{
 
 .selfie.not-front{
 	margin-right: 1rem;
+}
+
+.front-header .bg-success{
+	padding: .5rem;
+	font-size: 1.5rem;
+	line-height: 2rem;
 }
