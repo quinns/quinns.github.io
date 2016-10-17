@@ -1,0 +1,38 @@
+---
+layout: page
+title: Contact me
+permalink: /contact/
+---
+
+
+	<div class="row">
+		<div class="col-md-4 col-md-push-8">
+			<p><span class="fa fa-fw fa-user"></span> <strong>Quinn Supplee</strong></p>
+			<p><span class="fa fa-fw fa-envelope-o"></span> <a href="mailto:quinn@quinnsupplee.com" title="Email address">quinn@quinnsupplee.com</a></p>
+			<p><span class="fa fa-fw fa-phone"></span> <a href="tel:1-707-889-2645" title="Phone number">(707) 889-2645</a></p>
+			<p><span class="fa fa-fw fa-globe"></span> Located in Santa Rosa, CA</p>
+		</div>
+
+		<div class="col-md-8 col-md-pull-4">
+			<p class="hidden-md hidden-lg" style="margin-top: 2rem;"><strong>You can use this form to send me a message.</strong></p>
+			<form action="https://formspree.io/quinn@quinnsupplee.com" method="POST"  >
+				<div class="form-group">
+					<label for="name">Name</label>
+				    <input type="text" name="name" class="form-control" placeholder="Your name" required> 
+				</div>
+				<div class="form-group">
+					<label for="email">Email</label>
+				    <input type="email" name="_replyto" class="form-control" placeholder="Your email address" required>
+				</div>
+				<div class="form-group">
+					<label for="comments">Comments</label>
+				    <textarea name="comments" class="form-control" placeholder="Your comments. Say something nice!" rows="6"></textarea>
+				</div>
+			    <input type="text" name="_gotcha" style="display:none;">
+			    <input type="hidden" name="_subject" value="New contact from QuinnSupplee.com">
+			    <input type="hidden" name="_format" value="plain">
+			    <input type="hidden" name="_next" value="//quinnsupplee.com/contact-thanks">
+			    <input type="submit" value="Send" class="btn btn-primary">
+			</form>
+		</div>
+	</div>
