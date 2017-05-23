@@ -5,7 +5,7 @@ date: 2017-05-23
 category: github
 permalink: /getting-started-with-github
 ---
-
+<meta property="og:image" content="{{ site.baseurl }}/img/github-og.png" />
 
 Here's a presentation I did recently on the topic of "Getting Started with GitHub" for <a href="http://beawimp.org">WIMP</a>.
 
