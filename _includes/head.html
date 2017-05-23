@@ -31,5 +31,16 @@
 	{% include google_analytics.js %}
 	</script>
 	{% include piwik.html %}
-	<meta property="og:image" content="{{ site.baseurl }}/img/glasses-og.jpg" />
+	
+	{% if page.ogimg %}
+		<meta property="og:image" content="{{ site.baseurl }}/img/{{ page.ogimg }}" />
+	{% else %}
+		<meta property="og:image" content="{{ site.baseurl }}/img/glasses-og.jpg" />
+	{% endif %}
+
 </head>
+
+
+
+
+
